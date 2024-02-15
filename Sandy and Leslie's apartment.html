@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sandy and Leslie's apartment</title>
+		<link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="mystyle.css">
+		<style>
+			
+			header{
+				text-align:center;
+			}
+			
+			header img{
+				align-items:center;
+			}
+			
+			header nav li{
+				display:inline;
+				margin: 0.2em;
+			}
+			
+			
+			/* main css */
+			
+			.gridcontainer{
+				display:grid;
+				grid-gap:20px;
+				padding:20px;
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+			
+			.part-1{
+				grid-row:1;
+				grid-column:1;
+			}
+			
+			.part-2{
+				grid-row:1;
+				grid-column:2;
+			}
+			
+			.part-3{
+				grid-row:1;
+				grid-column:3;
+			}
+			
+			.part-4{
+				grid-row:2;
+				grid-column:1;
+			}
+			
+			.part-5{
+				grid-row:3;
+				grid-column:1;
+			}
+			
+			h3{
+				background-color: #ffe135;
+				color:black;
+				padding:10px;
+			}
+			
+			h4{
+				background-color:orange;
+				color:rgba(255, 255, 255, 0.749);
+				padding:8px;
+			}
+			
+			/* end main css */ 
+			
+			
+			
+			/* table css */
+			
+			table{
+				border:1px solid black;
+				border-collapse:collapse;
+			}
+			
+			tr ,td {
+				border:1px solid black;
+			}
+			
+			tr{
+				height:40px;
+			}
+			
+			td{
+				padding-left:5px;
+			}
+			
+			.spical{
+				background-color:#D3D3D3;
+			}
+			
+			.blue{
+				background-color:#d2f8d2;
+			}
+			
+			/* end table css */
+			
+			
+			
+			
+			/* Gallery css */
+			
+			.part-5 {
+				display: flex;
+				flex-wrap: wrap;
+				gap:20px;
+				width: 70%;                        
+                
+                margin-right: auto;
+			}
+			
+			.flex-item{
+				padding-top: 10px;
+				margin:10px;
+				
+			}
+			
+			/* end Gallery css */
+			
+			
+			
+			
+			footer{
+				text-align:center;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<h1>Sandy and Leslie's apartment</h1>
+			
+			<h5>Click a room for a detailed view</h5>
+			
+			<img src="apartmentfloorplan.jpg" alt="apartmentfloorplan" usemap="#apartment"> 
+			
+			<map name="apartment">
+			
+				<area shape="rect" coords="24,200,180,200" href="bedroom.html" title="bedroom" alt="bedroom">
+				<area shape="poly" coords="388,105,555,96,573,306,495,307" href="bedroom.html" title="bedroom" alt="bedroom">
+				<area shape="circle" coords="343,341,60" href="diningroom.html" title="diningroom" alt="diningroom">
+				<area shape="rect" coords="187,283,290,392" href="kitchen.html" title="kitchen" alt="kitchen">
+				<area shape="rect" coords="194,104,307,266" href="livingroom.html" title="livingroom" alt="livingroom">
+				<area shape="default" href="bedroom.html" alt="bedroom" title="bedroom">
+				
+			</map>
+			
+			<nav>
+				<ul>
+					<li><a href="apatment.html">Apatment</a></li>|
+					<li><a href="bedroom.html">Bedroom 1</a></li>|
+					<li><a href="bedroom.html">Bedroom 2</a></li>|
+					<li><a href="diningroom.html">Dining Room</a></li>|
+					<li><a href="kitchen.html">Kitchen</a></li>|
+					<li><a href="livingroom.html">Living Room</a></li>|
+				</ul>
+			</nav>
+		
+		</header>
+		
+			<main>
+			    <div class="gridcontainer">
+					<div class="part-1">
+					
+						<h3>Welcome Message</h3>
+						
+						<audio controls>
+							<source src="apartment.mp3" type="audio/mp3">
+						</audio>
+						<p>Transcript: Hello, Welcome to our Apartment. you'll really enjoy living here. The rooms are spacious and the apartment 
+						building amenities aredantastic. We look forward to hearing from you!</p>
+					
+					</div>
+					
+					<div class="part-2">
+					
+						<h3>Apartment services:</h3>
+					
+						<table>
+							<tr class="spical">
+								<th>Service</th>
+								<th>Day/Hours</th>
+							</tr>
+							<tr>
+								<td>Gym</td>
+								<td rowspan="2">Monday-Friday 6am-10pm<br>
+									Saturday 8am-8pm<br>
+									Sunday 8am-5pm
+								</td>
+							</tr>
+							<tr>
+								<td>Pool</td>
+							</tr>
+							<tr>
+								<td>Laundry</td>
+								<td>24/7</td>
+							</tr>
+							<tr class="blue">
+								<td colspan="2">Please do not allow people you
+									do not know to use therse facilities.
+								</td>
+							</tr>
+						</table>
+					
+					</div>
+					
+					<div class="part-3">
+					
+						<h3>Location</h3>
+					
+						<img src="location.png">
+						
+					</div>
+					
+					
+					<div class="part-4">
+					
+						<h3>Survey</h3>
+					
+						<P>How did you find out about this apartment? Ckeck any that apply:</p>
+					
+						<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+							<input type="checkbox" name="survey" value="websearch">Web search
+							<input type="checkbox" name="survey" value="friedn">Friend
+							<input type="checkbox" name="survey" value="newspaper">Newspaper
+							<br>
+							<input type="submit">
+							<input type="reset">
+						</form>
+					
+					</div>
+				</div>
+				
+				<h3>Gallery</h3>
+				<div class="part-5">
+				
+					
+					<div class = "flex-item">
+						<h4>Balcony</h4>
+						<img src="thumbnails/balcony_sm.jpg">
+					</div>
+
+					<div class = "flex-item">
+						<h4>Bathroom</h4>
+						<img src="thumbnails/bathroom_sm.jpg">
+					</div>
+					
+					<div class = "flex-item">
+						<h4>Bedroom</h4>
+						<img src="thumbnails/bedroom_sm.jpg">
+					</div>
+					
+					<div class = "flex-item">
+						<h4>Dining Room</h4>
+						<img src="thumbnails/diningroom_sm.jpg">
+					</div>
+					
+					<div class = "flex-item">
+						<h4>Kitchen</h4>
+						<img src="thumbnails/kitchen_sm.jpg">
+					</div>
+					
+					<div class = "flex-item">
+						<h4>Living Room</h4>
+						<img src="thumbnails/livingroom_sm.jpg">
+					</div>
+				</div>
+				
+			</main>
+			
+			
+			<footer>
+				
+				<P>For more information contact: <a href="mailto:apartment@example.com">SandyAndLeslie@example.com</a> or <a href="tel:(905)555-1234"> (905) 555-1234 </a></p>
+				<P>&#169; Sandy and Leslie 2022</p>
+				 
+				
+			</footer>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Living Room</title>
+		<style>
+			header{
+				text-align:center;
+			}
+			
+			header img{
+				align-items:center;
+			}
+			
+			header nav li{
+				display:inline;
+				margin: 0 0.2em;
+			}
+			
+			
+			h3{
+				background-color:#ffe135;
+				color:black;
+				padding:10px;
+			}
+			
+			.sec-1{
+				text-align:center;
+			}
+			
+			/* table css */
+			
+			table{
+				border:1px solid black;
+				border-collapse:collapse;
+			}
+			
+			tr ,td {
+				border:1px solid black;
+			}
+			
+			tr{
+				height:40px;
+			}
+			
+			td{
+				padding-left:5px;
+			}
+			
+			.spical{
+				background-color:#33cccc;
+			}
+			
+			.blue{
+				background-color:#D3D3D3;
+			}
+			
+			/* end table css */
+		</style>
+	</head>
+	
+	<body>
+	
+		<header>
+		
+			<h1>Sandy and Leslie's apartment</h1>
+			
+			<h5>Click a room for a detailed view</h5>
+			
+			<img src="apartmentfloorplan.jpg" alt="apartmentfloorplan" usemap="#apartment"> 
+			
+			<map name="apartment">
+			
+				<area shape="rect" coords="24,200,180,200" href="bedroom.html" title="bedroom" alt="bedroom">
+				<area shape="poly" coords="388,105,555,96,573,306,495,307" href="bedroom.html" title="bedroom" alt="bedroom">
+				<area shape="circle" coords="343,341,60" href="diningroom.html" title="diningroom" alt="diningroom">
+				<area shape="rect" coords="" href="kitchen.html" title="kitchen" alt="kitchen">
+				<area shape="rect" coords="" href="livingroom.html" title="livingroom" alt="livingroom">
+				<area shape="default" href="apatment.html" alt="apatment" title="apatment">
+				
+			</map>
+			
+			<nav>
+				<ul>
+					<li><a href="apatment.html">Apatment</a></li>
+					<li><a href="bedroom.html">Bedroom 1</a></li>
+					<li><a href="bedroom.html">Bedroom 2</a></li>
+					<li><a href="diningroom.html">Dining Room</a></li>
+					<li><a href="kitchen.html">Kitchen</a></li>
+					<li><a href="livingroom.html">Living Room</a></li>
+				</ul>
+			</nav>
+		
+		</header>
+		
+		
+		<div class="sec-1">
+		
+			<h3>Living Room</h3>
+		
+			<img src="livingroom_lg.jpg">
+			
+		</div>
+		
+		<div class="part-2">
+				
+			<h3>Apartment services:</h3>
+		
+			<table>
+				<tr class="spical">
+					<th>Service</th>
+					<th>Day/Hours</th>
+				</tr>
+				<tr>
+					<td>Gym</td>
+					<td rowspan="2">Monday-Friday 6am-10pm<br>
+						Saturday 8am-8pm<br>
+						Sunday 8am-5pm
+					</td>
+				</tr>
+				<tr>
+					<td>Pool</td>
+				</tr>
+				<tr>
+					<td>Laundry</td>
+					<td>24/7</td>
+				</tr>
+				<tr class="blue">
+					<td colspan="2">Please do not allow people you
+						do not know to use therse facilities.
+					</td>
+				</tr>
+			</table>
+				
+		</div>
+		
+		
+		<footer>
+				
+				<P>For more information contact: <a href="mailto:apartment@example.com">SandyAndLeslie@example.com</a> or <a href="tel:(905)555-1234"> (905) 555-1234 </a></p>
+				<P>&#169; Sandy and Leslie 2022</p>
+				 
+				
+		</footer>
+	</body>
+</html>
